@@ -10,9 +10,9 @@ const Header = (props) => {
   return(
     <header className="header">
         <nav className="headerMenu">
-            <a href="/home">Home</a>
-            <a href="/aboutus">About Us</a>
-            <a href="/contactus">Contact Us</a>
+            <a href="/">Home</a>
+            <a href="/about-us">About Us</a>
+            <a href="/contact-us">Contact Us</a>
         </nav>
         <div>
             Social Media links

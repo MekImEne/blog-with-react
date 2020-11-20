@@ -8,7 +8,7 @@ import "./style.css"
 const Logo = (props) => {
   return(
     <div className="logo">
-        <a href="#">Mekideche Imene</a>
+        <a href="/">Mekideche Imene</a>
     </div>
    )
 
