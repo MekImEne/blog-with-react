@@ -1,6 +1,6 @@
 import React from 'react';
 import BlogPost from '../../components/BlogPost';
-import Sidebar from '../../components/Sidebar';
+import Layout from '../../components/Layout';
 import "./style.css";
 /**
 * @author
@@ -9,13 +9,10 @@ import "./style.css";
 
 const Post = (props) => {
 
-
-
   return(
-    <section className="container">
-    <BlogPost {...props} />
-    <Sidebar/>
-    </section>
+      <Layout>
+        <BlogPost {...props} />
+      </Layout> 
    )
 
  }
