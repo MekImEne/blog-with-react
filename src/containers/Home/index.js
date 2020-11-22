@@ -22,21 +22,25 @@ const ImageGallary = props => {
     return (
         <div className="gallaryPost" style={props.gallaryStyle} >    
             <section style={{width:'70%'}} >
-                <div>
+                <div className="mainImageWrapper">
+                    {/* <img alt="" src={require('../../blogPostImages/')+ props.imagesArray[0]} /> */}
                     <img alt="" src={imgTest1} />
                 </div>    
             </section>
             <section className="sideImageWrapper" style={{width:'30%'}} >
                 <SideImage
                     height={props.sideImageHeight}
+                    // src={require('../../blogPostImages/')+ props.imagesArray[1]}
                     src={imgTest2}
                 />
                 <SideImage
                     height={props.sideImageHeight}
+                    // src={require('../../blogPostImages/')+ props.imagesArray[2]}
                     src={imgTest3}
                 />
                 <SideImage
                     height={props.sideImageHeight}
+                    // src={require('../../blogPostImages/')+ props.imagesArray[3]}
                     src={imgTest4}
                 />
             </section>
@@ -65,10 +69,8 @@ const Home = props => {
                     gallaryStyle={gallaryStyle}
                     sideImageHeight={sideImageHeight}
                     imagesArray = {imgArr}
-                    //images={[]}
                 />
             </Card>
-
             <section className="HomeContainer">
                 <RecentPosts style={{width:'70%'}}/>
                 <Sidebar/>
