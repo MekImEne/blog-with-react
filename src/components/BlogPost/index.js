@@ -17,7 +17,7 @@ const BlogPost = (props) => {
     const post = blogPost.data.find(post => post.id == postId);
     setPost(post);
     setPostId(postId);
-  }, [post, postId]);
+  }, [post, props.match.params.postId]);
 
   return(
         <div className="blogPostContainer">
@@ -29,7 +29,7 @@ const BlogPost = (props) => {
             </div>
 
             <div className="postImageContainer">
-               {/* <img alt="Post Image" src={require('../../blogPostImages/'+post.blogImage)} />  */}
+              <img alt="Post Image" src={post.blogImage} /> 
             </div>
 
             <div className="postContent">
